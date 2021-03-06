@@ -1,15 +1,14 @@
-#include <cstdio>
 #include<iostream>
 using namespace std;
 
 
 int main()
 {
-    int n, amount(0);
+    int n, amount=0;
     cin>>n;
 
     bool b[3001] = {false};
-    int pfactors[3001] = {0};
+    int pfactors[3001];
     for (int i = 2; i <= n; ++i)
     {
         if (!b[i])
@@ -26,7 +25,7 @@ int main()
             amount += 1;
         }
     }
-   
+
     cout<<amount;
     return 0;
 }
